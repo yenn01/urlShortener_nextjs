@@ -1,21 +1,36 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   align-items: inherit;
   font-size: 0.85rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+}
+
+.content {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 500px;
+    min-height: 70vh;
+}
+
+
+@media (min-width: 700px) {
+    .content {
+        width: 75%;
+    }
 }
 
 .description a {
@@ -127,9 +142,6 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
 
   .grid {
     grid-template-columns: 1fr;

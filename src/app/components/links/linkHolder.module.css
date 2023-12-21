@@ -1,0 +1,30 @@
+.linkHolder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    max-width: 1200px;
+   border-radius: 1rem;
+    background-color: #cacaca;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.copyButton {
+    background-color: transparent;
+    outline: none;
+    border: none !important;
+    padding: 0.1rem 0.1rem;
+    color:#000000;
+    
+    
+}

@@ -1,0 +1,44 @@
+.form {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    align-items: center;
+}
+
+.form input {
+    margin: 5px;
+    padding: 1rem;
+    border-radius: 5px;
+    width:100%;
+    border: 1px solid #000;
+}
+
+.form button {
+    margin: 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+    max-width:500px;
+}
+
+.linkHolderParent {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    max-width: 1200px;
+    border-radius: 1rem;
+    background-color: #cacaca;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
