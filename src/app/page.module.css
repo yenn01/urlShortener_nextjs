@@ -7,6 +7,13 @@
   min-height: 100vh;
 }
 
+@media screen and (max-width: 700px) {
+  .main {
+    padding: 4rem 2rem;
+  }
+    
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +28,7 @@
 
 .content {
     margin-top: 2rem;
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     min-height: 70vh;
 }

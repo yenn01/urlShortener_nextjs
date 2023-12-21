@@ -1,6 +1,6 @@
 .linkHolder {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -10,10 +10,9 @@
    border-radius: 1rem;
     background-color: #cacaca;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #333;
     text-align: center;
-    overflow: hidden;
     position: relative;
     z-index: 1;
     transition: all 0.3s ease-in-out;
@@ -27,4 +26,19 @@
     color:#000000;
     
     
+}
+.copyButton:hover {
+    background-color: #000000;
+    color:#92dfc8;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.copyButtonBackground {
+    display:flex;
+    flex-direction: row;
+}
+
+.copyButtonBackground p {
+    margin-right:0.2rem;
 }

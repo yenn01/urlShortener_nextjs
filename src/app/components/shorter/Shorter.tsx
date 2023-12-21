@@ -23,7 +23,7 @@ export default function Shorter() {
     console.log(response.json());
   }
 
-  const { data, mutate, isIdle, isError, isSuccess } = useMutation({
+  const { data, mutate, isIdle, isError, isSuccess, isPending } = useMutation({
     mutationFn: async (event: React.FormEvent<HTMLFormElement>) => {
       return getSURLs(event);
     },
@@ -72,9 +72,12 @@ export default function Shorter() {
           onChange={handleChange}
         />
         <button type="submit">Shorten</button>
-        <div>Error finding short url</div>
       </form>
     );
+  }
+
+  if (isPending) {
+    return [shortForm(), <div key="pending">Loading...</div>];
   }
 
   if (isError) {
